@@ -1,5 +1,5 @@
 #mySidenav a {
-    position: absolute;
+    position: fixed;
     left: -80px;
     transition: 0.3s;
     padding: 15px;
@@ -16,24 +16,27 @@
   
   #home {
     top: 20px;
-    background-color: #04AA6D;
+    background-color: #038a59;
   }
   
   #about {
     top: 80px;
-    background-color: #2196F3;
+    background-color: #003f72;
   }
   
   #projects {
     top: 140px;
-    background-color: #f44336;
+    background-color: #c3a903;
   }
   
   #contact {
     top: 200px;
-    background-color: #555
+    background-color: rgb(59, 59, 59)
   }
 
   .right-side-section{
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
   }

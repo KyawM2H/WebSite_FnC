@@ -36,7 +36,26 @@
 
   .right-side-section{
     text-align: center;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     background-color: azure;
+  }
+
+  .aboutme-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    
+    
+
+  }
+
+  .left-side, .right-side, .middle-side {
+    width: 30vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid gainsboro;
   }

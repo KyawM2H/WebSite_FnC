@@ -1,8 +1,7 @@
 import quotesJson from "./quotes.json" assert { type: "json" };
 
 let i = 0;
-let txt =
-  "Hi there, I created this website to showcase my application for FAC skills bootcamp.";
+let txt = "I created this website to showcase my application for FAC skills bootcamp.";
 let speed = 250;
 let _INTERVAL_VAL;
 
@@ -24,7 +23,6 @@ const typingEffect = () => {
 function Delete() {
   // Get substring with 1 characater deleted
   let text = txt.substring(0, i - 1);
-  console.log(text);
   document.getElementById("typing_effect").innerHTML = text;
   i--;
 
@@ -41,3 +39,14 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(typingEffect, speed);
+
+const qouteEl = document.getElementById("quotation");
+const sourceEl = document.getElementById("source");
+
+const renderQuotes = () => {
+    let ramdomQoute = Math.floor(Math.random() * quotesJson.length);
+    qouteEl.innerHTML = quotesJson[ramdomQoute].quote;
+    sourceEl.innerHTML = quotesJson[ramdomQoute].source;
+}
+
+setInterval(renderQuotes, 3000);

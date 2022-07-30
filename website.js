@@ -16,7 +16,7 @@ const typingEffect = () => {
     clearInterval(_INTERVAL_VAL);
     setTimeout(function () {
       _INTERVAL_VAL = setInterval(Delete, 50);
-    }, 1000);
+    }, speed);
   }
 };
 

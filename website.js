@@ -1,7 +1,8 @@
 import quotesJson from "./quotes.json" assert { type: "json" };
 
 let i = 0;
-let txt = "I created this website to showcase my application for FAC skills bootcamp.";
+let txt =
+  "I created this website to showcase my application for FAC skills bootcamp.";
 let speed = 250;
 let _INTERVAL_VAL;
 
@@ -44,9 +45,9 @@ const qouteEl = document.getElementById("quotation");
 const sourceEl = document.getElementById("source");
 
 const renderQuotes = () => {
-    let ramdomQoute = Math.floor(Math.random() * quotesJson.length);
-    qouteEl.innerHTML = quotesJson[ramdomQoute].quote;
-    sourceEl.innerHTML = quotesJson[ramdomQoute].source;
-}
+  let ramdomQoute = Math.floor(Math.random() * quotesJson.length);
+  qouteEl.innerHTML = quotesJson[ramdomQoute].quote;
+  sourceEl.innerHTML = quotesJson[ramdomQoute].source;
+};
 
 setInterval(renderQuotes, 3000);

@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap");
 
-html{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 p {
-    
-    font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
 }
 #mySidenav a {
   position: fixed;
@@ -102,7 +101,6 @@ p {
   margin-left: 95px;
   /* border: 2px steelblue solid; */
   border-radius: 3px;
-  
 }
 /* .item1 {
   grid-row: 1 / span 3;
@@ -125,35 +123,36 @@ p {
     background: url("./images/gallery.jpg")top left / cover no-repeat;
 } */
 
-.item1{
-    grid-row: 1 / span 2;
-    grid-column-start: 2;
-    /* border: 2px solid #000067; */
-    
+.item1 {
+  grid-row: 1 / span 2;
+  grid-column-start: 2;
+  /* border: 2px solid #000067; */
 }
-.item1 .item1_two_side p{
-    text-align: justify;
-    padding: 7px;
+.item1 .item1_two_side p {
+  text-align: justify;
+  padding: 7px;
 }
-.item3, .item2, .item4{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
+.item3,
+.item2,
+.item4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.item3 img, .item2 img, .item4 img{
-    width: 250px;
-    height: 200px;
+.item3 img,
+.item2 img,
+.item4 img {
+  width: 250px;
+  height: 200px;
 }
 .item1 img {
-    width: auto;
-    height: 350px;
+  width: auto;
+  height: 350px;
 }
-.two_side p{
-    color: #00004d;
-    padding: 0px 8px 0px;
-    text-align: justify;
-    
+.two_side p {
+  color: #00004d;
+  padding: 0px 8px 0px;
+  text-align: justify;
 }
 /* .item4{
     background: url("./images/comment_box.jpg")top left / cover no-repeat;
@@ -164,114 +163,99 @@ p {
         
 } */
 
-.typing_container{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-    align-content: center;
-    
+.typing_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
-.wrapper{
-    width: 59vw;
-    height: 85vh;
+.wrapper {
+  width: 59vw;
+  height: 85vh;
 }
-.name{
-    color: dodgerblue;
-    
+.name {
+  color: dodgerblue;
 }
 
-#typing_effect{
-    font-size: 3.5rem;
-    font-family: 'Ibarra Real Nova', serif;
-    letter-spacing: 3px;
-    word-spacing: 2px;    
-    color: #1B1212;
-    padding-top: 1rem;
-    animation: blink .90s step-end infinite;
-    text-align: justify;
-    
-  
+#typing_effect {
+  font-size: 3.5rem;
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  color: #1b1212;
+  padding-top: 1rem;
+  animation: blink 0.9s step-end infinite;
+  text-align: justify;
 }
 
 @keyframes blink {
-	from, to { 
-		background-color: transparent 
-	}
-	50% { 
-		color: #FF5733 ; 
-	}
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    color: #ff5733;
+  }
 }
 
-.fa{
-    color: #301934;
-    letter-spacing: 3rem;
-    font-size: 25px;
-        
+.fa {
+  color: #301934;
+  letter-spacing: 3rem;
+  font-size: 25px;
 }
 .repo:hover {
-    color: gold;
-
+  color: gold;
 }
 
-.link:hover{
-    color: magenta;
-
+.link:hover {
+  color: magenta;
 }
-.github_wrapper{
-    width: 50px;
-    height: auto;
-    margin-top: -17rem;
-    
+.github_wrapper {
+  width: 50px;
+  height: auto;
+  margin-top: -17rem;
 }
-.github_link{
-    font-size: 1.2rem;
-    /* font-family: 'Waiting for the Sunrise', cursive; */
-    font-family: 'Jim Nightshade', script;
-    letter-spacing: 0.3rem;
-    line-height: 2rem;
-    text-align: left;
-    
+.github_link {
+  font-size: 1.2rem;
+  /* font-family: 'Waiting for the Sunrise', cursive; */
+  font-family: "Jim Nightshade", script;
+  letter-spacing: 0.3rem;
+  line-height: 2rem;
+  text-align: left;
 }
 #contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    
-  }
-  
-.display_quotes p{
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    font-size: 2.2rem;
-    
-}
-.display_quotes p::before, .display_quotes p::after{
-    content: ' ❈ ✴  ';   
-    color: #ff7518;
-    font-size: 1.7rem;
-    
-}
-samp{
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-    color: #9F2B68;
-    font-weight: bold;
-}
-.socialIcons{
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    
-}
-.social{
-    font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
-code{
-    
-    font-size: 2.3rem;
-    color:dodgerblue;
-    
-    
-   
-}  
+.display_quotes p {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-size: 2.2rem;
+}
+.display_quotes p::before,
+.display_quotes p::after {
+  content: " ❈ ✴  ";
+  color: #ff7518;
+  font-size: 1.7rem;
+}
+samp {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  color: #9f2b68;
+  font-weight: bold;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.social {
+  font-size: 3rem;
+}
+
+code {
+  font-size: 2.3rem;
+  color: dodgerblue;
+}
